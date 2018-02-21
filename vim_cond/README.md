@@ -24,13 +24,27 @@ $ sudo apt-get vim
 
 ### Tutorials <a name ="tutorial"></a>
 
+Vim
 ```sh
 $ vimtutor
 ```
 
+#### TMUX
+
+install
+```
+sudo apt-get install tmux
+```
+
+configure setup
+add to ~/.tmux.conf
+```
+set -g mouse on
+```
+
 #### Vundle Tutorials
 
-[Vundle Tutorial][1]
+[Vundle Tutorial][1] <br>
 [Vundle GitHub Repository][2]
 
 ## Vundle
@@ -69,7 +83,43 @@ Open vim and type
 :PluginInstall
 ```
 
+#### NERDTree
 
+[NERDTree][3]
+
+```
+cd ~/.vim/bundle
+git clone https://github.com/scrooloose/nerdtree.git
+```
+
+Open ~/.vimrc, add to Plugins
+```
+Plugin 'scrooloose/nerdtree
+```
+
+To map quick key, add to .vimrc
+```
+map <C-n> :NERDTreeToggle<CR>
+```
+
+#### Slime
+
+setup
+```
+cd ~/.vim/bundle
+git clone git://github.com/jpalardy/vim-slime.git
+```
+
+Open ~/.vimrc, add to Plugins
+```
+Plugin 'jpalardy/vim-slime
+```
+
+Reconfigure to tmux
+Open ~/.vimrc, add to defaults
+```
+let g:slime_taget = "tmux"
+```
 
 
 ###References and Acknowledgements
@@ -78,3 +128,4 @@ This is a modification of a setup tutorial originally made by Tatsiana Anytolik 
 
 [1]: https://www.youtube.com/watch?v=JVpxDuxe1eY
 [2]: https://github.com/VundleVim/Vundle.vim
+[3]: https://github.com/scrooloose/nerdtree
