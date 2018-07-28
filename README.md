@@ -1,11 +1,7 @@
-#Setting up remove access
+#A Repository for Setting up my Perferable Environment
 
 ```
-sudu apt-get install ubuntu-desktop
 
-sudo apt-get install xrdp
-
-sudo apt-get install xfce4
 ```
 
 

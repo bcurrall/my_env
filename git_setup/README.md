@@ -47,9 +47,16 @@ $ touch .gitignore
 
 commiting
 ```
+# commit
+$ git diff
+$ git status
 $ git add -A
-$ git reset
-$ git commit 
+$ git commit
+
+#push
+$ git pull origin master
+$ git push origin master
+
 ```
 
 useful commands
